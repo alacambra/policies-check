@@ -1,0 +1,48 @@
+version: '2'
+services:
+  ca.dcentra.io:
+    image: hyperledger/fabric-ca:x86_64-1.1.0
+    environment:
+    - FABRIC_CA_HOME=/etc/hyperledger/fabric-ca-server
+    - FABRIC_CA_SERVER_CA_NAME=ca.dcentra.io
+    - FABRIC_CA_SERVER_TLS_ENABLED=false
+    - FABRIC_CA_SERVER_TLS_CERTFILE=/etc/hyperledger/fabric-ca-server-config/ca.dcentra.io-cert.pem
+    - FABRIC_CA_SERVER_TLS_KEYFILE=/etc/hyperledger/fabric-ca-server-config/052cf7f779dda937a6fc86aceaa6f230a8df64933ad3a910aa223b5a4be15830_sk
+    ports:
+    - 7054:7054
+    command: sh -c 'fabric-ca-server start --ca.name ca.dcentra.io --ca.certfile /etc/hyperledger/fabric-ca-server-config/ca.dcentra.io-cert.pem
+      --ca.keyfile /etc/hyperledger/fabric-ca-server-config/052cf7f779dda937a6fc86aceaa6f230a8df64933ad3a910aa223b5a4be15830_sk
+      -b admin:adminpw -d'
+    volumes:
+    - "./crypto-config/peerOrganizations/dcentra.io/ca/:/etc/hyperledger/fabric-ca-server-config"
+    - "./configs/:/etc/hyperledger/fabric-ca-server/"
+    container_name: ca.dcentra.io
+    networks:
+    - blockchain
+  orderer.climatecoop.com:
+    extends:
+      file: base/docker-compose-base.yaml
+      service: orderer.climatecoop.com
+    container_name: orderer.climatecoop.com
+  peer0.dcentra.io:
+    container_name: peer0.dcentra.io
+    extends:
+      file: base/docker-compose-base.yaml
+      service: peer0.dcentra.io
+  peer1.dcentra.io:
+    container_name: peer1.dcentra.io
+    extends:
+      file: base/docker-compose-base.yaml
+      service: peer1.dcentra.io
+  peer2.dcentra.io:
+    container_name: peer2.dcentra.io
+    extends:
+      file: base/docker-compose-base.yaml
+      service: peer2.dcentra.io
+networks:
+  blockchain:
+    ipam:
+      driver: default
+      config:
+      - subnet: 192.168.200.0/24
+        ip_range: 192.168.200.0/24
