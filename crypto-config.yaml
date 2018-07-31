@@ -26,10 +26,22 @@ PeerOrgs:
   # ---------------------------------------------------------------------------
   - Name: dCentra
     Domain: dcentra.io
+    Template:
+      Count: 3
+    Users:
+      Count: 3
   - Name: consenzus
     Domain: consenzus.io
+    Template:
+      Count: 3
+    Users:
+      Count: 3
   - Name: lacambra
     Domain: lacambra.tech
+    Template:
+      Count: 3
+    Users:
+      Count: 3
   
   
     # ---------------------------------------------------------------------------

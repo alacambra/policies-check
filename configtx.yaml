@@ -115,10 +115,7 @@ Organizations:
         MSPDir: crypto-config/peerOrganizations/consenzus.io/msp
         AdminPrincipal: Role.ADMIN
 
-        AnchorPeers:
-            # AnchorPeers defines the location of peers which can be used
-            # for cross org gossip communication.  Note, this value is only
-            # encoded in the genesis block in the Application section context
+        AnchorPeers:          
             - Host: peer0.consenzus.io
               Port: 7051
     - &lacambra
@@ -128,8 +125,5 @@ Organizations:
         AdminPrincipal: Role.ADMIN
 
         AnchorPeers:
-            # AnchorPeers defines the location of peers which can be used
-            # for cross org gossip communication.  Note, this value is only
-            # encoded in the genesis block in the Application section context
             - Host: peer0.lacambra.tech
               Port: 7051
