@@ -9,7 +9,7 @@ services:
 
   orderer.climatecoop.com:
     container_name: orderer.climatecoop.com
-    image: hyperledger/fabric-orderer:x86_64-1.1.0
+    image: hyperledger/fabric-orderer:x86_64-1.1.1
     environment:
       - ORDERER_GENERAL_LOGLEVEL=debug
       - ORDERER_GENERAL_LISTENADDRESS=0.0.0.0
