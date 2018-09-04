@@ -1,6 +1,6 @@
 {
-    "sourcePath": "/Users/albertlacambra1/git/lacambra.tech/policies/deployment",
+    "sourcePath": "/Users/albertlacambra1/git/lacambra.tech/policies/polcies-trayning-cc/deployment",
     "chaincodeName": "policies",
-    "version": "9",
+    "version": "4",
     "policyPath": "/Users/albertlacambra1/fabric-material/policies-check/chaincodeendorsementpolicy.yaml"
   }

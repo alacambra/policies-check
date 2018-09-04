@@ -26,18 +26,21 @@ PeerOrgs:
   # ---------------------------------------------------------------------------
   - Name: dCentra
     Domain: dcentra.io
+    EnableNodeOUs: true
     Template:
       Count: 3
     Users:
       Count: 3
   - Name: consenzus
     Domain: consenzus.io
+    EnableNodeOUs: true
     Template:
       Count: 3
     Users:
       Count: 3
   - Name: lacambra
     Domain: lacambra.tech
+    EnableNodeOUs: true
     Template:
       Count: 3
     Users:

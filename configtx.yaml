@@ -36,6 +36,10 @@ Orderer: &OrdererDefaults
     # Organizations is the list of orgs which are defined as participants on
     # the orderer side of the network
     Organizations:
+        - *climatecoop
+        - *dcentra
+        - *consenzus
+        - *lacambra
 
 ################################################################################
 #
@@ -67,23 +71,19 @@ Profiles:
 
     MultiOrgsOrdererGenesis:
         Orderer:
-            <<: *OrdererDefaults
-            Organizations:
-                - *climatecoop
+            <<: *OrdererDefaults     
         Consortiums:
             ClimateCoopConsortium:
                 Organizations:
-                    - *dcentra
-                    - *consenzus
-                    - *lacambra
+                    - <<: *lacambra
+                    - <<: *climatecoop
+                    - <<: *dcentra
+                    - <<: *consenzus
+
     MultiOrgsChannel:
         Consortium: ClimateCoopConsortium
         Application:
             <<: *ApplicationDefaults
-            Organizations:
-                - *dcentra
-                - *consenzus
-                - *lacambra
 
 ################################################################################
 #
@@ -125,8 +125,6 @@ Organizations:
         Name: lacambraMSP
         ID: lacambraMSP
         MSPDir: crypto-config/peerOrganizations/lacambra.tech/msp
-        AdminPrincipal: Role.ADMIN
-
         AnchorPeers:
             - Host: peer0.lacambra.tech
               Port: 7051

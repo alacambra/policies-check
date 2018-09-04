@@ -6,7 +6,7 @@
       "domain": "lacambra.tech",
       "adminCredentials": {
         "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/msp/admincerts/Admin@lacambra.tech-cert.pem",
-        "pkLocation": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/users/Admin@lacambra.tech/msp/keystore/937a41c8f660f07b0aebc3fb16b764935c61b13c12c7188df4935cbd268c04af_sk"
+        "pkLocation": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/users/Admin@lacambra.tech/msp/keystore/8f9cc76b1581e0751a6d442bfc09aff087b227783b0cbeac2f976b393519c203_sk"
       },
       "ca": {
         "name": "ca.lacambra.tech",

@@ -6,7 +6,7 @@
       "domain": "consenzus.io",
       "adminCredentials": {
         "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/msp/admincerts/Admin@consenzus.io-cert.pem",
-        "pkLocation": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/users/Admin@consenzus.io/msp/keystore/1c1ababa7d62b595a6c1e6cc05996930468ed8a514955863ab3cf7d4d98f1049_sk"
+        "pkLocation": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/users/Admin@consenzus.io/msp/keystore/417eb51496ebd94986e9e0fa9af61fa5751573cb21ec453a65547521ae157057_sk"
       },
       "ca": {
         "name": "ca.consenzus.io",

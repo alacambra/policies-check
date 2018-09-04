@@ -1,9 +1,11 @@
 ---
-# A Shotgun policy xx
 identities:  # list roles to be used in the policy
-    admin1: {"role": {"name": "admin", "mspId": "dcentraMSP"}} # admin role.
+    lacambra: {"role": {"name": "peer", "mspId": "lacambraMSP"}} 
+    consenzus: {"role": {"name": "member", "mspId": "consenzusMSP"}} 
+    dcentra: {"role": {"name": "member", "mspId": "dcentraMSP"}} 
 
-policy: # the policy  .. could have been flat but show grouping.
-    1-of: # signed by one of these groups  can be <n>-of  where <n> is any digit 2-of, 3-of etc..
-      - signed-by: "admin1"
-      #- signed-by: "admin1"
+policy: 
+    1-of:
+      - signed-by: "lacambra"
+      - signed-by: "consenzus"
+      - signed-by: "dcentra"
