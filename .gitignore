@@ -1,3 +1,5 @@
 channel-artifacts/*
 crypto-material/*
 crypto-config/*
+.DS_Store
+bin/

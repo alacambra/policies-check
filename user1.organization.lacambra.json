@@ -5,13 +5,13 @@
       "msp": "lacambraMSP",
       "domain": "lacambra.tech",
       "adminCredentials": {
-        "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/users/User1@lacambra.tech/msp/signcerts/User1@lacambra.tech-cert.pem",
-        "pkLocation": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/users/User1@lacambra.tech/msp/keystore/d9772c798aff3506de8c88951b47cff4e5ec3cf5dc37312b997995ac4f088be4_sk"
+        "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/users/User1@lacambra.tech/msp/signcerts/User1@lacambra.tech-cert.pem",
+        "pkLocation": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/users/User1@lacambra.tech/msp/keystore/d9772c798aff3506de8c88951b47cff4e5ec3cf5dc37312b997995ac4f088be4_sk"
       },
       "ca": {
         "name": "ca.lacambra.tech",
         "url": "http://192.168.99.100:27054",
-        "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/ca/ca.lacambra.tech-cert.pem",
+        "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/ca/ca.lacambra.tech-cert.pem",
         "allowAllHostNames": "true",
         "msp": "lacambraMSP",
         "adminCredentials": {
@@ -27,7 +27,7 @@
           "negotiationType": "plainText",
           "sslProvider": "JDK",
           "hostnameOverride": "peer1.lacambra.tech",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
           "proposalWaitTime": 120000,
           "grpcNettyOptions": {
             "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
@@ -42,7 +42,7 @@
           "negotiationType": "plainText",
           "sslProvider": "JDK",
           "hostnameOverride": "peer2.lacambra.tech",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
           "proposalWaitTime": 120000,
           "grpcNettyOptions": {
             "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
@@ -57,52 +57,7 @@
           "negotiationType": "plainText",
           "sslProvider": "JDK",
           "hostnameOverride": "peer0.lacambra.tech",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
-          "proposalWaitTime": 120000,
-          "grpcNettyOptions": {
-            "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
-            "grpc.NettyChannelBuilderOption.keepAliveTimeout": 8,
-            "grpc.NettyChannelBuilderOption.maxInboundMessageSize": 9000000
-          }
-        },
-        {
-          "name": "peer0.dcentra.io",
-          "trustServerCertificate": true,
-          "url": "grpc://192.168.99.100:7051",
-          "negotiationType": "plainText",
-          "sslProvider": "JDK",
-          "hostnameOverride": "peer1.dcentra.io",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/dcentra.io/peers/peer0.dcentra.io/tls/server.crt",
-          "proposalWaitTime": 120000,
-          "grpcNettyOptions": {
-            "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
-            "grpc.NettyChannelBuilderOption.keepAliveTimeout": 8,
-            "grpc.NettyChannelBuilderOption.maxInboundMessageSize": 9000000
-          }
-        },
-        {
-          "name": "peer1.dcentra.io",
-          "trustServerCertificate": true,
-          "url": "grpc://192.168.99.100:8051",
-          "negotiationType": "plainText",
-          "sslProvider": "JDK",
-          "hostnameOverride": "peer2.dcentra.io",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/dcentra.io/peers/peer0.dcentra.io/tls/server.crt",
-          "proposalWaitTime": 120000,
-          "grpcNettyOptions": {
-            "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
-            "grpc.NettyChannelBuilderOption.keepAliveTimeout": 8,
-            "grpc.NettyChannelBuilderOption.maxInboundMessageSize": 9000000
-          }
-        },
-        {
-          "name": "peer2.dcentra.io",
-          "trustServerCertificate": true,
-          "url": "grpc://192.168.99.100:9051",
-          "negotiationType": "plainText",
-          "sslProvider": "JDK",
-          "hostnameOverride": "peer0.dcentra.io",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/dcentra.io/peers/peer0.dcentra.io/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
           "proposalWaitTime": 120000,
           "grpcNettyOptions": {
             "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
@@ -117,7 +72,7 @@
           "negotiationType": "plainText",
           "sslProvider": "JDK",
           "hostnameOverride": "peer1.consenzus.io",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/tls/server.crt",
           "proposalWaitTime": 120000,
           "grpcNettyOptions": {
             "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
@@ -132,7 +87,7 @@
           "negotiationType": "plainText",
           "sslProvider": "JDK",
           "hostnameOverride": "peer2.consenzus.io",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/tls/server.crt",
           "proposalWaitTime": 120000,
           "grpcNettyOptions": {
             "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
@@ -147,7 +102,7 @@
           "negotiationType": "plainText",
           "sslProvider": "JDK",
           "hostnameOverride": "peer0.consenzus.io",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/consenzus.io/peers/peer0.consenzus.io/tls/server.crt",
           "proposalWaitTime": 120000,
           "grpcNettyOptions": {
             "grpc.NettyChannelBuilderOption.keepAliveTime": 300,
@@ -160,7 +115,7 @@
         {
           "name": "peer0.lacambra.tech",
           "url": "grpc://192.168.99.100:27053",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
           "trustServerCertificate": true,
           "hostnameOverride": "peer0.lacambra.tech",
           "sslProvider": "JDK",
@@ -174,7 +129,7 @@
         {
           "name": "peer1.lacambra.tech",
           "url": "grpc://192.168.99.100:28053",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
           "trustServerCertificate": true,
           "hostnameOverride": "peer0.lacambra.tech",
           "sslProvider": "JDK",
@@ -188,7 +143,7 @@
         {
           "name": "peer2.lacambra.tech",
           "url": "grpc://192.168.99.100:29053",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/peerOrganizations/lacambra.tech/peers/peer0.lacambra.tech/tls/server.crt",
           "trustServerCertificate": true,
           "hostnameOverride": "peer0.lacambra.tech",
           "sslProvider": "JDK",
@@ -204,7 +159,7 @@
         {
           "name": "orderer.climatecoop.com",
           "url": "grpc://192.168.99.100:7050",
-          "pemFile": "/Users/albertlacambra1/fabric-material/policies-check/crypto-config/ordererOrganizations/climatecoop.com/msp/cacerts/ca.climatecoop.com-cert.pem",
+          "pemFile": "/Users/albertlacambra/git/fabric-material/policies-check/crypto-config/ordererOrganizations/climatecoop.com/msp/cacerts/ca.climatecoop.com-cert.pem",
           "trustServerCertificate": true,
           "hostnameOverride": true,
           "sslProvider": "JDK",

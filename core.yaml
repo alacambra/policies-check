@@ -37,6 +37,7 @@ Orderer: &OrdererDefaults
     # the orderer side of the network
     Organizations:
         - *climatecoop
+        - *dcentra
         - *consenzus
         - *lacambra
 
@@ -53,6 +54,7 @@ Application: &ApplicationDefaults
     # Organizations is the list of orgs which are defined as participants on
     # the application side of the network
     Organizations:
+        - *dcentra
         - *consenzus
         - *lacambra
     
@@ -75,6 +77,7 @@ Profiles:
                 Organizations:
                     - <<: *lacambra
                     - <<: *climatecoop
+                    - <<: *dcentra
                     - <<: *consenzus
 
     MultiOrgsChannel:
@@ -97,6 +100,18 @@ Organizations:
         ID: climatecoopMSP
         MSPDir: crypto-config/ordererOrganizations/climatecoop.com/msp
 
+    - &dcentra
+        Name: dcentraMSP
+        ID: dcentraMSP
+        MSPDir: crypto-config/peerOrganizations/dcentra.io/msp
+        AdminPrincipal: Role.ADMIN
+
+        AnchorPeers:
+            # AnchorPeers defines the location of peers which can be used
+            # for cross org gossip communication.  Note, this value is only
+            # encoded in the genesis block in the Application section context
+            - Host: peer0.dcentra.io
+              Port: 7051
     - &consenzus
         Name: consenzusMSP
         ID: consenzusMSP
