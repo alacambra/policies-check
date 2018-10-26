@@ -18,6 +18,8 @@ if [ ${CODE} -ne 0 ]; then
 fi
 
 CORE_PEER_ADDRESS=localhost:27051
+${BIN}/peer channel fetch 0 block.block -c policies-channel -o localhost:7050
+
 ${BIN}/peer channel join -b block.block -o localhost:7050
 
 CORE_PEER_ADDRESS=localhost:28051
