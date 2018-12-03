@@ -1,0 +1,6 @@
+identities:  # list roles to be used in the policy
+    lacambra: {"role": {"name": "peer", "mspId": "lacambraMSP"}} 
+
+policy: 
+    1-of:
+      - signed-by: "lacambra"

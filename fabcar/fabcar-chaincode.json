@@ -1,0 +1,6 @@
+{
+    "sourcePath": "/Users/albertlacambra1/git/lacambra.tech/policies/polcies-trayning-cc/deployment",
+    "chaincodeName": "fabcar",
+    "version": "1",
+    "policyPath": "/Users/albertlacambra1/fabric-material/policies-check/chaincodeendorsementpolicy.yaml"
+}

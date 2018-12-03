@@ -24,11 +24,6 @@ services:
       file: base/docker-compose-base.yaml
       service: orderer.climatecoop.com
     container_name: orderer.climatecoop.com
-  peer0.dcentra.io:
-    container_name: peer0.dcentra.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer0.dcentra.io
   peer1.dcentra.io:
     container_name: peer1.dcentra.io
     extends:
