@@ -1,5 +1,5 @@
 {
-    "sourcePath": "/Users/albertlacambra1/git/lacambra.tech/policies/polcies-trayning-cc/deployment",
+    "sourcePath": "/Users/albertlacambra/git/lacambra.tech/fabric-toolbox/fabcar-sample/fabcar-chaincode",
     "chaincodeName": "fabcar",
     "version": "1",
     "policyPath": "/Users/albertlacambra1/fabric-material/policies-check/chaincodeendorsementpolicy.yaml"
