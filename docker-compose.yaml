@@ -5,36 +5,6 @@ services:
       file: base/docker-compose-base.yaml
       service: orderer.climatecoop.com
     container_name: orderer.climatecoop.com
-  peer0.dcentra.io:
-    container_name: peer0.dcentra.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer0.dcentra.io
-  peer1.dcentra.io:
-    container_name: peer1.dcentra.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer1.dcentra.io
-  peer2.dcentra.io:
-    container_name: peer2.dcentra.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer2.dcentra.io
-  peer0.consenzus.io:
-    container_name: peer0.consenzus.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer0.consenzus.io
-  peer1.consenzus.io:
-    container_name: peer1.consenzus.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer1.consenzus.io
-  peer2.consenzus.io:
-    container_name: peer2.consenzus.io
-    extends:
-      file: base/docker-compose-base.yaml
-      service: peer2.consenzus.io
   peer0.lacambra.tech:
     container_name: peer0.lacambra.tech
     extends:
