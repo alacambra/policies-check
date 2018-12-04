@@ -2,5 +2,5 @@
     "sourcePath": "/Users/albertlacambra/git/lacambra.tech/fabric-toolbox/fabcar-sample/fabcar-chaincode",
     "chaincodeName": "fabcar",
     "version": "1",
-    "policyPath": "/Users/albertlacambra1/fabric-material/policies-check/chaincodeendorsementpolicy.yaml"
+    "policyPath": "/Users/albertlacambra/git/fabric-material/fab-1.3-1org/fabcar/fabcar-chaincode-policies.yaml"
 }
